@@ -1,8 +1,11 @@
 *{
     text-align: center;
+    margin: auto 0;
+    align-items: center;
 }
-.container{
-    width: 50%;
+.container-fluid{
+    margin: 0 auto;
+    width: 100%;
     height: 100%;
     border: 10px;
     border: black;
@@ -12,6 +15,7 @@
     align-self: center;
     align-content: center;
 }
+
 #play{
     margin-top: 20%;
     margin-bottom: 20%;
@@ -20,16 +24,19 @@
 
 .tiles{
     visibility: hidden;
-    margin-left: 25%;
     margin-top: 2%;
-    margin-bottom: 2%;
+    margin-bottom: 3%;
+    width: 100%;
+    padding-left: 20%;
 }
 
 .back img{
-  width: 100px;
-  height: 100px;
+  width: 8vw;
+  height: 8vw;
 }
-
+.row{
+  width: 100%;
+}
 .col{
     float: left;
 }
@@ -38,8 +45,8 @@
     transition: transform 2s;
     transform-style: preserve-3d;
     cursor: pointer;
-    width: 100px;
-    height: 100px;
+    width: 8vw;
+    height: 8vw;
   }
   
   .front, .back {
@@ -49,8 +56,8 @@
     justify-content: center;
     align-items: center;
     backface-visibility: hidden;
-    width: 100px;
-    height: 100px;
+    width: 8vw;
+    height: 8vw;
   }
   
   .front {
@@ -65,4 +72,6 @@
     transform: rotateY(180deg);
     background-color: brown;
   }
+  
+
   
